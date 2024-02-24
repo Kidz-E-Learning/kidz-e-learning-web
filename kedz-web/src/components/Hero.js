@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../assets/images/heroimage3.jpg";
+import heroImage from "../assets/images/heroimage4.jpg";
 
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           <div className="text-white">
             <button>Register</button>
-            <button className="opacity-100">Sign Up</button>
+            <button className="opacity-80">Sign Up</button>
           </div>
         </div>
       </div>
