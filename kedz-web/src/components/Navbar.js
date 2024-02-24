@@ -8,18 +8,19 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-red-100/80 ">
+    <div className="w-full min-h-[100px] flex justify-between items-center absolute z-10 text-white  ">
       <div className="flex items-center justify-evenly flex-1">
-        <div className="flex items-center -mx-4">
+        <div className="flex cursor-pointer items-center -mx-4">
           {" "}
           <img
+            href="/"
             src={logoImage}
             alt="Logo"
-            className="h-8 w-8 cursor-pointer rounded-full"
+            className="h-8 w-8 cursor-pointer rounded-full "
           />
-          <p className="text-black pl-2">Kidz</p>
+          <p className=" text-black cursor-pointer pl-2 font-bold">Kidz</p>
         </div>
-        <ul className="hidden sm:flex px-4 text-black">
+        <ul className="hidden  sm:flex px-4 text-black">
           <li>
             <a href="/">Our Story</a>
           </li>
@@ -36,12 +37,12 @@ const Navbar = () => {
       </div>
 
       <div className="flex justify-between items-center">
-        <div className="mr-4">
+        <div className="mx-4">
           <button>Sign Up</button>
         </div>
         {/* Hamburger Icon */}
 
-        <div onClick={handleNavClick} className="sm:hidden z-10">
+        <div onClick={handleNavClick} className="sm:hidden z-10 text-black">
           <FaBars size={20} className="mr-4 cursor-pointer" />
         </div>
         {/* Hamburger Menu */}
@@ -49,7 +50,7 @@ const Navbar = () => {
           onClick={handleNavClick}
           className={
             nav
-              ? "overflow-y-hidden md:hidden ease-in duration-300 absolute text-white left-0 w-full top-0 h-screen bg-black/90 px-4 py-7 flex flex-col"
+              ? "overflow-y-hidden md:hidden ease-in duration-300 absolute text-black left-0 w-full top-0 h-screen bg-orange/90 px-4 py-7 flex flex-col"
               : "absolute top-0 h-screen left-[-100%] ease-in duration-500"
           }
         >
