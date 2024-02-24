@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --primary-dark: #e7a09f;
-  --primary-light: #472929;
+  --primary-dark: #000000;
+  --primary-light: #404040;
 }
 
 @layer base {
   button {
-    @apply px-4 py-4 border rounded-lg bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
+    @apply px-8 py-4 mr-5 border rounded-full bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
   }
   li {
-    @apply p-4 text-sm;
+    @apply p-4 text-sm font-bold hover:underline;
   }
 }
